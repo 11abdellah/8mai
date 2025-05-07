@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>اتصل بنا | ذكرى 8 ماي 1945</title>
+
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS داخلي -->
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .contact-box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-alert {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h4 mb-0">اتصل بنا</h1>
+    <nav>
+      <a href="homme.html" class="text-white me-3"><i class="fas fa-home"></i> الرئيسية</a>
+      <a href="sijil.html" class="text-white"><i class="fas fa-edit"></i> التسجيل</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="contact-box mx-auto col-lg-8">
+      <h2 class="text-center text-primary mb-4">راسلنا مباشرة</h2>
+
+      <div class="alert alert-success form-alert" id="contactSuccess">
+        تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+      </div>
+
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">الاسم الكامل</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">البريد الإلكتروني</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">الموضوع</label>
+          <input type="text" class="form-control" id="subject" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">الرسالة</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+      </form>
+    </div>
+
+    <div class="mt-5 text-center">
+      <h5><i class="fas fa-map-marker-alt text-danger"></i> مقر المركز:</h5>
+      <p>بلدية سيدي عبد العزيز - ولاية جيجل   </p>
+
+      <h5><i class="fas fa-phone text-success"></i> الهاتف:</h5>
+      <p>+213 36 12 34 56</p>
+
+      <h5><i class="fas fa-envelope text-warning"></i> البريد الإلكتروني:</h5>
+      <p>contact@boukabach-cfp.dz</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center mt-5">
+  <div class="container">
+    <p class="mb-0">© 2025 جميع الحقوق محفوظة | مركز التكوين المهني بوكعباش حسين</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS لإظهار رسالة النجاح -->
+<script>
+  const contactForm = document.getElementById('contactForm');
+  const contactSuccess = document.getElementById('contactSuccess');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    contactSuccess.style.display = 'block';
+    contactForm.reset();
+    setTimeout(() => {
+      contactSuccess.style.display = 'none';
+    }, 4000);
+  });
+</script>
+
+</body>
+</html>
