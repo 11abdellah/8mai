@@ -628,3 +628,12 @@ footer {
     
     .statistics .container {
         grid-template-columns: 1fr;
+.hero-section {
+  background-image: url('bg.png'); /* غيّر اسم الصورة حسب ملفك */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px; /* تعديل حسب رغبتك */
+  color: white; /* لجعل النص واضح فوق الخلفية */
+  text-align: center;
+}
