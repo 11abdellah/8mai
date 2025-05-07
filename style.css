@@ -629,7 +629,7 @@ footer {
     .statistics .container {
         grid-template-columns: 1fr;
 .hero {
-  background-image: url('bg.png'); /* عدّل المسار حسب مكان الصورة */
+  background-image: url('bg.PNG'); /* عدّل المسار حسب مكان الصورة */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
