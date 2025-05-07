@@ -87,7 +87,9 @@ header .container {
     display: flex;
     align-items: center;
 }
-
+.logo img {
+  height: 50px; /* غيّر الرقم حسب الحجم المناسب لك */
+}
 .logo h1 {
     font-size: 1.5rem;
     margin-right: 10px;
